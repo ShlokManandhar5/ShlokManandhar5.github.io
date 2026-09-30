@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shlok Manandhar – DevOps & Cloud</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav><span>Shlok Manandhar</span><div><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<div class="hero">
+<div>
+<h1>DevOps &amp; cloud, built to ship.</h1>
+<p>I'm Shlok, an IT graduate in Kathmandu. I build CI/CD pipelines, Kubernetes deployments and secure Linux infrastructure.</p>
+<a class="btn" href="#work">See my work</a><a class="btn alt" href="mailto:shlokmndr@gmail.com">Email me</a>
+</div>
+<div class="term" aria-label="Terminal showing a Kubernetes deployment">
+<header><i></i><i></i><i></i></header>
+<pre><span class="p">$</span> git push origin main
+<span class="d">jenkins  build #42 → docker push</span>
+<span class="d">argocd   syncing manifests…</span>
+<span class="p">$</span> kubectl get pods
+NAME          READY   STATUS
+app-7f9c-x2   1/1     <span class="g">Running</span>
+app-7f9c-k8   1/1     <span class="g">Running</span></pre>
+</div>
+</div>
+
+<section id="work">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card wide"><h3>Jenkins → Docker Hub → ArgoCD → Kubernetes</h3>
+<p>A complete CI/CD pipeline in two parts. Jenkins watches Git, builds a Go app into a Docker image tagged with the build number, and pushes it to Docker Hub. ArgoCD then watches the manifests in Git and deploys the new version to Kubernetes (Deployments, Services, Ingress).</p>
+<div class="tags"><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>ArgoCD</span><span>GitOps</span><span>Go</span></div></div>
+<div class="card"><h3>Three-tier web architecture</h3>
+<p>Nginx load balancer in front of two Flask servers and a dedicated MySQL server, with firewall rules and SELinux policies isolating each tier.</p>
+<div class="tags"><span>Nginx</span><span>Flask</span><span>MySQL</span><span>SELinux</span></div></div>
+<div class="card"><h3>Automated encrypted backups</h3>
+<p>Bash automation that dumps MySQL, encrypts with AES-256-CBC (PBKDF2 + salt) using OpenSSL, and copies backups between servers over SCP on a schedule.</p>
+<div class="tags"><span>Bash</span><span>OpenSSL</span><span>MySQL</span><span>SCP</span></div></div>
+<div class="card"><h3>Sprout: pre-school tracker</h3>
+<p>Designed a platform for tracking child development: profiles, parent login, progress, development plans and diet. Planned as a React + PostgreSQL PWA.</p>
+<div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div></div>
+<div class="card"><h3>More practice projects</h3>
+<p class="mini"><b>Django deployment:</b> Bash script that deploys a Django app.<br><b>Git hooks:</b> automation experiments for DevOps.<br><b>Spotify clone:</b> web app that plays songs.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="sk">
+<div class="card"><h3>DevOps &amp; CI/CD</h3><div class="tags"><span>Jenkins</span><span>Git</span><span>Docker</span><span>Kubernetes</span><span>ArgoCD</span><span>GitOps</span></div></div>
+<div class="card"><h3>Cloud &amp; infrastructure</h3><div class="tags"><span>AWS</span><span>Linux</span><span>Nginx</span><span>VirtualBox</span><span>Networking</span><span>Load balancing</span></div></div>
+<div class="card"><h3>Security</h3><div class="tags"><span>SELinux</span><span>Linux firewall</span><span>OpenSSL</span><span>DevSecOps</span><span>Zero Trust</span><span>STRIDE</span></div></div>
+<div class="card"><h3>Code &amp; data</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>SQL</span><span>Bash</span><span>React</span><span>Node.js</span><span>Flask</span><span>MySQL</span><span>MongoDB</span></div></div>
+</div>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<div class="row">
+<div class="card"><h3>IT Department Intern</h3><p>National Life Insurance · Jun–Sep 2025</p><p style="color:var(--ink);margin:0">Gave IT support and helped with day-to-day software development at the head office, troubleshooting hardware and software issues.</p></div>
+<div class="card"><h3>B.Sc. Information Technology</h3><p>Westcliff University / Presidential Graduate School · 2022–2026</p>
+<div class="tags"><span>AWS Academy Graduate</span><span>AWS Cloud Quest: Cloud Practitioner</span><span>Cisco Networking Basics</span></div></div>
+</div>
+</section>
+
+<div class="cta" id="contact">
+<h2>Looking for an entry-level DevOps or cloud role?</h2>
+<p>Let's talk. I'm in Kathmandu and speak Nepali and English.</p>
+<a class="btn" href="mailto:shlokmndr@gmail.com">shlokmndr@gmail.com</a><a class="btn" href="tel:+9779869287945">+977-9869287945</a>
+<!-- Add: <a class="btn" href="YOUR_GITHUB_URL">GitHub</a> <a class="btn" href="YOUR_LINKEDIN_URL">LinkedIn</a> -->
+</div>
+<footer>© <span id="year">2026</span> Shlok Manandhar</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
